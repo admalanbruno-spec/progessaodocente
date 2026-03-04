@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta de Progressão Docente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Consulta de Progressão Docente</h2>
+
+<input type="text" id="busca" placeholder="Digite seu nome ou SIAPE">
+<button onclick="consultar()">Consultar</button>
+
+<div id="resultado"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
