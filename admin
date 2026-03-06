@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Painel CGP</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
+<body>
+
+<div class="header">
+  <h1>Painel CGP</h1>
+</div>
+
+<div class="container">
+
+  <input type="password" id="senha" placeholder="Senha CGP">
+  <button onclick="login()">Entrar</button>
+
+  <div id="painel" style="display:none;">
+    <h3>Importar Planilha Excel</h3>
+    <input type="file" id="excelFile">
+    <button onclick="importarExcel()">Importar</button>
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
