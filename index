@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Consulta de Progressão Docente</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Consulta de Progressão Docente</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
-<h2>Consulta de Progressão Docente</h2>
+<div class="header">
+  <h1>IFPA</h1>
+  <p>Consulta de Progressão Docente</p>
+</div>
 
-<input type="text" id="busca" placeholder="Digite seu nome ou SIAPE">
-<button onclick="consultar()">Consultar</button>
+<div class="container">
+  <input type="text" id="siape" placeholder="Digite seu SIAPE">
+  <button onclick="consultar()">Consultar</button>
+  <div id="resultado"></div>
+</div>
 
-<div id="resultado"></div>
-
-<script src="script.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
